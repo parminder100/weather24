@@ -1,0 +1,125 @@
+header{
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+.logo{
+    width: 100px;
+}
+.toggle-bg{
+    width: 65px;
+    height: 30px;
+    background-color: hsl(230deg 1.09% 49.07%);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-thumb{
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+.logo-container{
+    gap:30px;
+}
+.toggle-thumb i{
+    font-size: 1.1rem;
+}
+.toggle-thumb .fa-sun-o{
+    transform: translateX(34px);
+    transition: all .5s;
+}
+.toggle-thumb .fa-moon-o{
+    transition: all .55s;
+}
+.header-bg{
+    background-color: #5a5555;
+}
+.navbar-nav a{
+    text-decoration: none;
+}
+.nav-item{
+    color: #fff;
+}
+.navbar-nav{
+    gap: 30px;
+}
+.navbar_container{
+    display: flex;
+    justify-content: end;
+}
+.input-field{
+    width: 0px;
+    padding-left: 10px;
+    transition: all 1s;
+    opacity: 0;
+    border-radius: 10px;
+    border-width: 0px;
+}
+.fa-search{
+    position: relative;
+    left:-24px;
+    cursor: pointer;
+}
+.visible-input{
+    opacity: 1;
+}
+.mobile-logo-name{
+    display: none;
+}
+
+
+
+/* Media queries start */
+@media (max-width: 575.98px) {
+    .logo{
+        width: 56px;
+    }
+    .header-left-container{
+        flex: 0 0 auto;
+        width: 70%;
+    }
+    .header-right-container{
+        flex: 0 0 auto;
+        width: 30%;
+    }
+    .logo-container {
+        gap: 50px;
+        align-items: baseline !important;
+    }
+    .navbar_container{
+        display: block;
+    }
+    .header-row{
+        align-items: unset !important;
+    }
+    .fa-search{
+        left:-2px;
+    }
+    .navbar-nav{
+        text-align: end;
+    }
+    .logo-name{
+        display: none;
+    }
+    .mobile-logo-name{
+        display: block;
+    }
+    .input-field{
+        margin-left: -121px;
+        margin-right: -20px;
+    }
+    .navbar-collapse{
+        margin-top: 25px;
+    }
+    .navbar-toggler{
+        margin-left: 28px;
+        margin-top: 7px;
+    }
+    .toggle-bg{
+        top:21px;
+    }
+}

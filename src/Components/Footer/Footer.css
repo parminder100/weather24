@@ -1,0 +1,163 @@
+footer {
+  background-color: lightgrey;
+  padding: 20px 20px 10px 20px;
+  margin-top: 20px;
+}
+.copy-right {
+  display: flex;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.copy_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.open-weather-map-logo-container img{
+  width: 150px;
+}
+.newsdata-logo-container img{
+  width: 50px;
+}
+.newsdata-logo-container a{
+  color: #000;
+  text-decoration: none;
+}
+.newsdata-logo-container a:hover{
+  color: #000;
+}
+.open-weather-map-logo-container a{
+  color: #000;
+  text-decoration: none;
+}
+.open-weather-map-logo-container a:hover{
+  color: #000;
+}
+.heart {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: rgb(255, 0, 0);
+  transform: translate(-50%, -50%);
+  rotate: -45deg;
+  animation: beat 1s ease-in-out infinite;
+  box-shadow: 0 0 20px red;
+  margin-left: 26px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 20px red;
+}
+
+.heart:before {
+  top: -9px;
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: 9px;
+}
+
+/* animation */
+
+@keyframes beat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes auras {
+  0% {
+    box-shadow: 0 0 80px 60px red;
+  }
+  14.285714285714285714285714285714% {
+    box-shadow: 0 0 80px 60px orange;
+  }
+  28.571428571428571428571428571429% {
+    box-shadow: 0 0 80px 60px yellow;
+  }
+  42.857142857142857142857142857143% {
+    box-shadow: 0 0 80px 60px green;
+  }
+  57.142857142857142857142857142857% {
+    box-shadow: 0 0 80px 60px blue;
+  }
+  71.428571428571428571428571428571% {
+    box-shadow: 0 0 80px 60px indigo;
+  }
+  85.714285714285714285714285714286% {
+    box-shadow: 0 0 80px 60px violet;
+  }
+  100% {
+    box-shadow: 0 0 80px 60px red;
+  }
+}
+
+@media (max-width: 575.98px) {
+  footer {
+    padding: 20px 10px 10px 10px;
+  }
+  .copy_right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+  }
+  .copy-right {
+    font-size: 10px;
+  }
+  .heart {
+    width: 10px;
+    height: 10px;
+    margin-left: 12px;
+    animation-name: auras;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: beat 1s ease-in-out infinite;
+  }
+  .heart:before,
+  .heart:after {
+    width: 10px;
+    height: 10px;
+  }
+  .heart:before {
+    top: -5px;
+  }
+  .heart:after {
+    top: 0;
+    left: 5px;
+  }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .copy_right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .copy_right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+  }
+}

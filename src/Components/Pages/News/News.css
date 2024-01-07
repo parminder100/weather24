@@ -1,0 +1,20 @@
+.news-container{
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+.news-header header{
+    background-color: #808080;
+}
+.text-limit {
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+.news-items{
+    margin-bottom: 50px;
+}
+.image_not_available{
+    color: #fff;
+    font-size: 20px;
+}

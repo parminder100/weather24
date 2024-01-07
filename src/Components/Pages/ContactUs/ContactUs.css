@@ -1,0 +1,149 @@
+.contact-info-container{
+    background-color: #000;
+    padding:20px;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.contactus_container{
+    padding-top: 130px;
+    padding-bottom: 150px;
+}
+.contactus-theme{
+    background-color: #fff;
+}
+.contactinfo-theme{
+    color: #000 !important;
+}
+.contactus-footer-content footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.contactus-header header{
+    background-color: grey;
+}
+.contact-description{
+    color: #c9c9c9;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.contact-heading{
+    font-size: 28px;
+    color: #fff;
+}
+.fa-mobile-phone{
+    margin-right: 25px;
+}
+.fa-envelope{
+    margin-right: 25px;
+}
+.fa-map-marker{
+    margin-right: 25px;
+}
+.map-marker-icon{
+    margin-bottom: 170px;
+}
+.twitter-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #1b1b1b;
+    position: relative;
+}
+.fa-twitter{
+    position: absolute;
+    color: #fff;
+    left: 9px;
+    top: 7px;
+}
+.fa-instagram{
+    position: absolute;
+    color: #fff;
+    top: 7px;
+    left: 9px;
+}
+.fa-youtube-play{
+    position: absolute;
+    color: #fff;
+    top: 7px;
+    left: 9px;
+}
+.social-media-icon{
+    gap:30px;
+    margin-bottom: 59px;
+}
+.form-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.form-column{
+    padding-left: 0px;
+}
+.contact-column{
+    padding-right: 0px;
+    position: relative;
+}
+.contactus-image{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.8;
+}
+.circle-contactus-image{
+    position: absolute;
+    right: 78px;
+    bottom: 56px;
+    opacity: 0.8;
+}
+.submit-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: 500;
+}
+
+
+
+/* Media queries */
+@media (max-width: 575.98px) {
+    .contact-column{
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        margin-bottom: 20px;
+    }
+    .form-column{
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .contactus_container{
+        padding-bottom: 250px;
+    }
+    .contactus-image{
+        right: 11px;
+    }
+    .contact-info-container {
+        border-radius: 10px;
+    }
+    .form-container{
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contactus_container{
+        padding-bottom: 250px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contactus_container{
+        padding-bottom: 250px;
+    }
+}
